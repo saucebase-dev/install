@@ -5,7 +5,7 @@ The one-command way to create a new [Saucebase](https://saucebase.dev) applicati
 ## macOS / Linux
 
 ```sh
-curl -fsSL https://install.saucebase.dev | bash -s -- my-app
+curl -fsSL https://install.saucebase.dev | bash
 ```
 
 ## Windows (PowerShell)
