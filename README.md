@@ -1,4 +1,4 @@
-# Saucebase installer
+# Saucebase install
 
 The one-command way to create a new [Saucebase](https://saucebase.dev) application.
 
