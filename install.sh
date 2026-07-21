@@ -38,4 +38,8 @@ if [ -n "$COMPOSER_BIN" ]; then
     export PATH="$COMPOSER_BIN:$PATH"
 fi
 
-exec saucebase new "$@"
+
+# Piped through `curl | bash`, stdin is the script itself — by now exhausted,
+# so prompts would silently fall back to defaults instead of asking. Redirect
+# from the controlling terminal so `saucebase new` stays interactive.
+exec saucebase new "$@" < /dev/tty
